@@ -51,7 +51,8 @@
   text-align: center;
 }
 
-.description { 
+.description {
+  margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -125,6 +126,7 @@
   margin: 0 24px;
     list-style: none;
     font-weight: bold;
+<<<<<<< HEAD
 } 
 
 .myImg{
@@ -175,3 +177,6 @@
   padding: 30px 0px;
 >>>>>>> parent of 8212922 (Tutorial 28)
 }
+=======
+} 
+>>>>>>> parent of ae6522a (Tutorial 13)
