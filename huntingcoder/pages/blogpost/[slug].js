@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router'
 import styles from '../../styles/BlogPost.module.css'
-import * as fs from 'fs';
 
 // Step 1: Find the file corresponding to the slug
 // Step 2: Populate them inside the page
+<<<<<<< HEAD
 const Slug = (props) => {
 <<<<<<< HEAD
   function createMarkup(c) {
@@ -12,6 +12,9 @@ const Slug = (props) => {
   }
 =======
 >>>>>>> parent of 2e5da84 (Tutorial 24)
+=======
+const slug = (props) => {
+>>>>>>> parent of 2ade68a (Tutorial 23)
   const [blog, setBlog] = useState(props.myBlog);
 
 
@@ -32,8 +35,17 @@ const Slug = (props) => {
   </div>;
 };
 
-export async function getStaticPaths() {
+
+
+export async function getServerSideProps(context) {
+  // console.log(context.query)
+  // const router = useRouter();
+  const { slug } = context.query;
+   
+  let data = await fetch(`http://localhost:3000/api/getblog?slug=${slug}`)
+  let myBlog = await data.json()
   return {
+<<<<<<< HEAD
     paths: [
       { params: { slug: 'how-to-learn-flask' } },
       { params: { slug: 'how-to-learn-javascript' } },
@@ -51,6 +63,9 @@ export async function getStaticProps(context) {
 
   return {
     props: { myBlog: JSON.parse(myBlog) }, // will be passed to the page component as props
+=======
+    props: { myBlog }, // will be passed to the page component as props
+>>>>>>> parent of 2ade68a (Tutorial 23)
   }
 }
-export default Slug;
+export default slug;

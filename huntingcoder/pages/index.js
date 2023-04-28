@@ -1,4 +1,5 @@
-import Head from 'next/head' 
+import Head from 'next/head'
+import Image from 'next/image'
 import styles from '../styles/Home.module.css' 
 
 
@@ -63,9 +64,13 @@ export default function Home() {
         
         </h1>
         <div className={styles.imagewrap}> 
+<<<<<<< HEAD
 {/* <Image className={styles.myImg} src="/homeimg.jfif" width={237} height={158}/> */}
 <img className={styles.myImg} src="/homeimg.jfif" width={237} height={158} alt="hunting coder" />
 >>>>>>> parent of 8212922 (Tutorial 28)
+=======
+<Image className={styles.myImg} src="/homeimg.jfif" width={237} height={158}/>
+>>>>>>> parent of 2ade68a (Tutorial 23)
         </div>
         <p className={styles.description}>
           A blog for hunting coders by a hunting coder
