@@ -18,6 +18,7 @@ export default async function handler(req, res) {
     res.status(200).json(allBlogs)
 =======
 export default function handler(req, res) {
+<<<<<<< HEAD
 <<<<<<< HEAD:huntingcoder/pages/api/blogs.js
   fs.readdir("blogdata", (err, data)=>{
     console.log(data)
@@ -28,4 +29,7 @@ export default function handler(req, res) {
   // console.log(res)
   res.status(200).json({ name: 'Harry Bhai' })
 >>>>>>> parent of 0872553 (Tutorial 18):huntingcoder/pages/api/hello.js
+=======
+  res.status(200).json({ name: 'John Doe' })
+>>>>>>> parent of 87af461 (Tutorial 17)
 }
