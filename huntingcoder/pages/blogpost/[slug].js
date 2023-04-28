@@ -10,6 +10,7 @@ import React from 'react';
 import { useRouter } from 'next/router'
 import styles from '../../styles/BlogPost.module.css' 
 
+<<<<<<< HEAD
 // Step 1: Find the file corresponding to the slug
 // Step 2: Populate them inside the page
 <<<<<<< HEAD
@@ -79,6 +80,8 @@ export async function getStaticProps(context) {
   }
 }
 =======
+=======
+>>>>>>> parent of 8df1897 (Tutorial 16)
 const slug = () => {
     const router = useRouter();
     const { slug } = router.query;
