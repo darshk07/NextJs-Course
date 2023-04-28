@@ -1,5 +1,4 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import * as fs from 'fs';
 
 <<<<<<< HEAD
 export default async function handler(req, res) {
@@ -19,9 +18,14 @@ export default async function handler(req, res) {
     res.status(200).json(allBlogs)
 =======
 export default function handler(req, res) {
+<<<<<<< HEAD:huntingcoder/pages/api/blogs.js
   fs.readdir("blogdata", (err, data)=>{
     console.log(data)
     res.status(200).json(data)
   })
 >>>>>>> parent of ea45bda (Tutorial 19)
+=======
+  // console.log(res)
+  res.status(200).json({ name: 'Harry Bhai' })
+>>>>>>> parent of 0872553 (Tutorial 18):huntingcoder/pages/api/hello.js
 }
