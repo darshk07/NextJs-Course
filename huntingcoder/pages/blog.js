@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
+<<<<<<< HEAD
   useEffect(()=>{
     console.log("useeffect is running");
     fetch('http://localhost:3000/api/blogs').then((a)=>{
@@ -15,6 +16,16 @@ const Blog = () => {
         console.log(parsed)
         setBlogs(parsed)
     })
+=======
+  useEffect(() => {
+    console.log("useeffect is running");
+    fetch('http://localhost:3000/api/blogs').then((a) => {
+      return a.json();
+    })
+      .then((parsed) => {
+        setBlogs(parsed)
+      })
+>>>>>>> parent of 0d376ab (Tutorial 22)
   }, [])
   return <div className={styles.container}>
     <main className={styles.main}> 
