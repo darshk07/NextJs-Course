@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
-import styles from '../styles/Contact.module.css'
-
-
+import React from 'react';
 
 const Contact = () => {
+<<<<<<< HEAD
   const [name, setname] = useState('')
   const [email, setemail] = useState('')
   const [phone, setphone] = useState('')
@@ -76,6 +74,9 @@ const Contact = () => {
       <button type="submit" className="btn btn-primary">Submit</button>
     </form>
   </div>;
+=======
+  return <div>This is contact page</div>;
+>>>>>>> parent of c9db812 (Tutorial 26)
 };
 
 export default Contact;
