@@ -8,7 +8,6 @@ import React, {useState, useEffect} from 'react';
 import React from 'react';
 >>>>>>> parent of b578836 (Tutorial 20)
 import { useRouter } from 'next/router'
-import styles from '../../styles/BlogPost.module.css' 
 
 <<<<<<< HEAD
 // Step 1: Find the file corresponding to the slug
@@ -85,16 +84,7 @@ export async function getStaticProps(context) {
 const slug = () => {
     const router = useRouter();
     const { slug } = router.query;
-    return <div className={styles.container}>
-        <main className={styles.main}>
-        <h1>Title of the page {slug}</h1>
-        <hr />
-        <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nulla repudiandae sint facilis, sunt corrupti numquam id illo. Ut deserunt animi iste voluptatum!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus maxime rem earum repudiandae, cum possimus quae assumenda nulla culpa. Odit architecto repellendus non, unde recusandae placeat nisi perferendis quod nesciunt! Dolorum sapiente et sint consequuntur earum blanditiis iusto reprehenderit molestiae quia eligendi? Exercitationem, officia nobis!
-        </div>
-        </main>
-    </div>;
+    return <div>{slug}</div>;
 };
 
 >>>>>>> parent of 0d376ab (Tutorial 22)

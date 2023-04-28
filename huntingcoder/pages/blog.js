@@ -1,8 +1,7 @@
 import React from 'react';
-import styles from '../styles/Blog.module.css' 
-import Link from 'next/link';
 
 const Blog = () => {
+<<<<<<< HEAD
 <<<<<<< HEAD
   const [blogs, setBlogs] = useState([]);
 <<<<<<< HEAD
@@ -52,6 +51,9 @@ const Blog = () => {
   </div>
   </main>
 </div>
+=======
+  return <div>This is Blog home page</div>;
+>>>>>>> parent of 0d61d24 (Tutorial 15)
 };
 
 export default Blog;
