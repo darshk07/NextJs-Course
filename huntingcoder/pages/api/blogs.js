@@ -1,6 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import * as fs from 'fs';
 
+<<<<<<< HEAD
 export default async function handler(req, res) {
 <<<<<<< HEAD
 =======
@@ -16,4 +17,11 @@ export default async function handler(req, res) {
           allBlogs.push(JSON.parse(myfile))
       }
     res.status(200).json(allBlogs)
+=======
+export default function handler(req, res) {
+  fs.readdir("blogdata", (err, data)=>{
+    console.log(data)
+    res.status(200).json(data)
+  })
+>>>>>>> parent of ea45bda (Tutorial 19)
 }

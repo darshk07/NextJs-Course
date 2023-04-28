@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from '../styles/Blog.module.css' 
 import Link from 'next/link';
 
@@ -6,6 +6,7 @@ import Link from 'next/link';
 // Step 2: Iterate through the and Display them
 
 const Blog = () => {
+<<<<<<< HEAD
   const [blogs, setBlogs] = useState([]);
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,15 +36,23 @@ const Blog = () => {
     })
 >>>>>>> parent of b578836 (Tutorial 20)
   }, [])
+=======
+>>>>>>> parent of ea45bda (Tutorial 19)
   return <div className={styles.container}>
-    <main className={styles.main}> 
-      {blogs.map((blogitem)=>{
-        return <div key={blogitem.slug}>
-        <Link href={`/blogpost/${blogitem.slug}`}>
-        <h3 className={styles.blogItemh3}>{blogitem.title}</h3></Link>
-        <p className={styles.blogItemp}>{blogitem.content.substr(0, 140)}...</p>
-      </div>
-      })} 
+    <main className={styles.main}>
+  <div>
+    <Link href={'/blogpost/learn-javascript'}>
+    <h3 className={styles.blogItemh3}>How to learn JavaScript in 2022?</h3></Link>
+    <p>JavaScript is the language used to design logic for the web</p>
+  </div>
+  <div className="blogItem">
+    <h3>How to learn JavaScript in 2022?</h3>
+    <p>JavaScript is the language used to design logic for the web</p>
+  </div>
+  <div className="blogItem">
+    <h3>How to learn JavaScript in 2022?</h3>
+    <p>JavaScript is the language used to design logic for the web</p>
+  </div>
   </main>
 </div>
 };
