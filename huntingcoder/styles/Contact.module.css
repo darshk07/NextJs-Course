@@ -5,10 +5,9 @@
 
 .mb3{
     margin-bottom: 21px;
-    display: flex;
-    flex-direction: column;
 }
 
+<<<<<<< HEAD
 
 .input{
     padding: 3px;
@@ -43,4 +42,8 @@
         max-width: 88vw;
         margin: auto;
     }
+=======
+.formlabel{
+    margin: 0px 14px;
+>>>>>>> parent of 8212922 (Tutorial 28)
 }

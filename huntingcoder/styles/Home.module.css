@@ -43,12 +43,17 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 1.5rem;
+  font-size: 4rem;
 }
 
 .title,
 .description {
   text-align: center;
+}
+
+.description { 
+  line-height: 1.5;
+  font-size: 1.5rem;
 }
 
 .code {
@@ -123,11 +128,11 @@
 } 
 
 .myImg{
-  width: 157px;
-  border-radius: 92px; 
+  border-radius: 10px; 
 }
 
 .imagewrap{
+<<<<<<< HEAD
   padding: 15px 0px;
 }
 
@@ -166,4 +171,7 @@
         font-weight: bold;
      
   }
+=======
+  padding: 30px 0px;
+>>>>>>> parent of 8212922 (Tutorial 28)
 }
