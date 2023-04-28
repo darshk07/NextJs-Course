@@ -8,6 +8,7 @@ import Link from 'next/link';
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 <<<<<<< HEAD
+<<<<<<< HEAD
   useEffect(()=>{
     console.log("useeffect is running");
     fetch('http://localhost:3000/api/blogs').then((a)=>{
@@ -18,14 +19,21 @@ const Blog = () => {
     })
 =======
   useEffect(() => {
+=======
+  useEffect(()=>{
+>>>>>>> parent of b578836 (Tutorial 20)
     console.log("useeffect is running");
-    fetch('http://localhost:3000/api/blogs').then((a) => {
-      return a.json();
-    })
-      .then((parsed) => {
+    fetch('http://localhost:3000/api/blogs').then((a)=>{
+      return a.json();})
+      .then((parsed)=>{ 
+        console.log(parsed)
         setBlogs(parsed)
+<<<<<<< HEAD
       })
 >>>>>>> parent of 0d376ab (Tutorial 22)
+=======
+    })
+>>>>>>> parent of b578836 (Tutorial 20)
   }, [])
   return <div className={styles.container}>
     <main className={styles.main}> 
