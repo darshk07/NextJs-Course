@@ -20,7 +20,6 @@ export default function Home() {
           <span className='dummy'>&lt;HuntingCoder/&gt;</span>
         </h1>
 
-<<<<<<< HEAD
         <div>
           <h2 className={styles.h2}>Latest Blogs</h2>
           <div>
@@ -38,17 +37,6 @@ export default function Home() {
             <p>JavaScript is the language used to design logic for the web</p>
             <button className={styles.btn}>Read More</button>
           </div>
-=======
-        <p className={styles.description}>
-          A blog for hunting coders by a hunting coder
-        </p>
-
-      <div className="blogs">
-        <h2>Popular Blogs</h2>
-        <div className="blogItem">
-          <h3>How to learn JavaScript in 2022?</h3>
-          <p>JavaScript is the language used to design logic for the web</p>
->>>>>>> parent of a4d64e7 (Tutorial 10)
         </div>
       </main>
 
